@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,13 +301,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
+      propertyPath: def.velocity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
       propertyPath: def.damageOnHit
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
+      propertyPath: def.continuousDamage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
       propertyPath: def.delayBetweenShots
-      value: 0.35
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
@@ -725,6 +735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
+      propertyPath: def.continuousDamage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
       propertyPath: def.delayBetweenShots
       value: 0.3
       objectReference: {fileID: 0}
@@ -1117,16 +1132,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemies:
   - {fileID: 1864666716847092, guid: a69aa768d15cba34b96a5422e50dc9b4, type: 3}
-  - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
-  - {fileID: 1801717105832950, guid: cb4206b8e00300649994ecf8ffe838d5, type: 3}
   - {fileID: 1158547974957732, guid: a0a74b7d2e3ac2449b0e77185af83fed, type: 3}
-  - {fileID: 1801717105832950, guid: cb4206b8e00300649994ecf8ffe838d5, type: 3}
-  - {fileID: 1864666716847092, guid: a69aa768d15cba34b96a5422e50dc9b4, type: 3}
-  - {fileID: 1158547974957732, guid: a0a74b7d2e3ac2449b0e77185af83fed, type: 3}
-  - {fileID: 1864666716847092, guid: a69aa768d15cba34b96a5422e50dc9b4, type: 3}
   - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
-  - {fileID: 1700942416061258, guid: 3f6055558a488314cb38691d88c41fdf, type: 3}
-  enemySpawnPerSecond: 1.25
+  - {fileID: 1801717105832950, guid: f1f1876f002af6c48943c8ba8c16b511, type: 3}
+  - {fileID: 1864666716847092, guid: 834e564994b4894438c715fa7b1bbb15, type: 3}
+  enemySpawnPerSecond: 0.75
   enemyDefaultPadding: 1.5
   weaponDefinitions:
   - type: 2
@@ -1375,16 +1385,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89945d366f74234594d375c5597c723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  rollMult: -45
+  speed: 40
+  rollMult: -65
   pitchMult: 30
   gameRestartDelay: 2
   projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
     type: 3}
-  projectileSpeed: 40
+  projectileSpeed: 55
   weapons:
-  - {fileID: 1836420893}
-  - {fileID: 1836420893}
   - {fileID: 1836420893}
   - {fileID: 1836420893}
   - {fileID: 1836420893}
